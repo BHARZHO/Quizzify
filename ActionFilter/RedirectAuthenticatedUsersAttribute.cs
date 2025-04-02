@@ -1,19 +1,20 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Quiziffy.ActionFilter;
-
-public class RedirectAuthenticatedUsersAttribute : Attribute, IActionFilter
+namespace Quiziffy.ActionFilter
 {
-    public void OnActionExecuted(ActionExecutedContext context)
+    public class RedirectAuthenticatedUsersAttribute : Attribute, IActionFilter
     {
-    }
-
-    public void OnActionExecuting(ActionExecutingContext context)
-    {
-        if (context.HttpContext.User.Identity!.IsAuthenticated)
+        public void OnActionExecuted(ActionExecutedContext context)
         {
-            context.Result = new RedirectToActionResult("Index", "Team", null);
+        }
+
+        public void OnActionExecuting(ActionExecutingContext context)
+        {
+            if (context.HttpContext.User.Identity!.IsAuthenticated)
+            {
+                context.Result = new RedirectToActionResult("Index", "Team", null);
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Quiziffy_App.Data
+namespace Quiziffy.Data
 {
     public static class DataExtensions
     {

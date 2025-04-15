@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Quiziffy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51edb97cc7dd678ce43dcc0b3675957dd9ea5666")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a59e49efe43e3bdccc1d758ce8e02404992d657e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quiziffy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quiziffy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

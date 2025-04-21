@@ -1,3 +1,5 @@
+namespace Quiziffy.Models;
+    
     public class Gift
     {
         public int Id { get; set; }
